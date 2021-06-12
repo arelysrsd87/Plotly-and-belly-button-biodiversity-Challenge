@@ -98,8 +98,8 @@ function buildCharts(sample) {
       text: otu_labels,
       mode: 'markers'
       marker: {
-        size:
-        color:
+        size: sample_values
+        color: otu_ids
         colorscale: 
       }
     }
@@ -111,7 +111,7 @@ function buildCharts(sample) {
       title: "Bacteria Cultures Per Sample"
       xaxis: {title: "OTU ID"}
       margin: {t: 50, l: 100}
-      hovermode: text
+      hovermode: "closest"
       
     };
 
