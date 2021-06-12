@@ -98,8 +98,8 @@ function buildCharts(sample) {
       text: otu_labels,
       mode: 'markers'
       marker: {
-        size: sample_values
-        color: otu_ids
+        size: sample_values,
+        color: otu_ids,
         colorscale: 'Earth'
       }
     }
@@ -110,7 +110,7 @@ function buildCharts(sample) {
     var bubbleLayout = {
       title: "Bacteria Cultures Per Sample"
       xaxis: {title: "OTU ID"}
-      margin: {t: 50, l: 100}
+      margin: {t: 30}
       hovermode: "closest"
       
     };
