@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div class="container"> </div>
+    <div class="container">
       <div class="row">
         <div class="col-md-2">
           <div class="well">
@@ -40,37 +40,33 @@
           <!-- <select id="selDataset"></select> -->
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </div>
+        </div>
+
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
-      </div>
       
-      <div class="col-md-5">
-        <form class="bg-dark">
-        <div id="bar"></div>
-        <p>This horizontal bar chart displays the top 10 bacterial species (OTUs) when an individual's ID is selected from the dropdown menu.</p>
-        </form>
-      </div>
+        <div class="col-md-5">
+          <div id="bar"></div>
+            <p>This horizontal bar chart displays the top 10 bacterial species (OTUs) when an individual's ID is selected from the dropdown menu.</p>
+        </div>
       
-      <div class="col-md-5">
-        <form class="bg-dark">
-        <div id="gauge"></div>
-        </form>
+        <div class="col-md-5">
+          <div id="gauge"></div>
+        </div>
+
       </div>
     </div>
     
-    <div class="row">
-      <div class="col-md-12">
-        <form class="bg-dark">
-        <div id="bubble"></div>
-        <p>This buble chart displays the sample values as a functions of the individual's ID when and individual's ID is selected from the dropdown menu.</p>
-        </form>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="bubble"></div>
+            <p>This buble chart displays the sample values as a functions of the individual's ID when and individual's ID is selected from the dropdown menu.</p>
+        </div>
       </div>
-    </div>
-    </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>

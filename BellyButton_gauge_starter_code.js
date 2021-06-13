@@ -61,6 +61,7 @@ function buildCharts(sample) {
     
     // 5. Create the layout  the gauge chart.
     var gaugeLayout = { 
+
      title: "<b>Belly Button Washing Frequency</b> <br> Scrubs per Week",
      maximum range: 10,
     
