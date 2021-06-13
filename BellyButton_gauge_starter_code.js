@@ -18,7 +18,7 @@ function buildCharts(sample) {
 
 
     // 3. Create a variable that holds the washing frequency.
-    
+    var 
     // Create the yticks for the bar chart.
 
     // Use Plotly to plot the bar data and layout.
@@ -33,13 +33,25 @@ function buildCharts(sample) {
      
     ];
     
-    // 5. Create the layout for the gauge chart.
+    // 5. Create the layout  the gauge chart.
     var gaugeLayout = { 
+     value: wfreq,
      type: "indicator",
      mode: "gauge+number",
-     title: "Belly Button Washing Frequency",
+     title: "<b>Belly Button Washing Frequency</b> <br> Scrubs per Week",
      maximum range: 10,
-     bar color: "black",
+     bar: {color: 'rgba(8,29,88,0)'}, 
+     steps: [
+      { range: [0, 1], color: 'rgb(255,255,217)' },
+      { range: [1, 2], color: 'rgb(237,248,217)' },
+      { range: [2, 3], color: 'rgb(199,233,180)' },
+      { range: [3, 4], color: 'rgb(127,205,187)' },
+      { range: [4, 5], color: 'rgb(65,182,196)' },
+      { range: [5, 6], color: 'rgb(29,145,192)' },
+      { range: [6, 7], color: 'rgb(34,94,168)' },
+      { range: [7, 8], color: 'rgb(37,52,148)' },
+      { range: [8, 9], color: 'rgb(8,29,88)' }
+  ]
 
     };
 
