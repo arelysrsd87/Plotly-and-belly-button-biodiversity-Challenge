@@ -120,13 +120,13 @@ function buildCharts(sample) {
 
   // 1. Create a variable that filters the metadata array for the object with the desired sample number.
     var metadata = data.metadata;
-    var gaugeArray = metadata.filter(metaObj => metaObj.id == sample);  
+    var resultArray = metadata.filter(metaObj => metaObj.id == sample);  
 
   // 2. Create a variable that holds the first sample in the metadata array.
-      var gaugeResult = gaugeArray[0];
+      var result = resultArray[0];
 
   // 3. Create a variable that holds the washing frequency.  
-    var wfreqs = gaugeResult.wfreq;
+    var wfreqs = result.wfreq;
     console.log(wfreqs)
 
   // 4. Create the trace for the gauge chart.
