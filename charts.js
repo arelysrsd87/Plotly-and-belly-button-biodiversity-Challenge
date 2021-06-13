@@ -73,7 +73,6 @@ function buildCharts(sample) {
     //  so the otu_ids with the most bacteria are last. 
 
     var yticks = otu_ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse();
-    console.log(yticks)
 
     // 8. Create the trace for the bar chart. 
     var barData = [{
@@ -120,11 +119,11 @@ function buildCharts(sample) {
 }
 
   // 1. Create a variable that filters the metadata array for the object with the desired sample number.
-    var metadata = data.metadata;
-    var resultArray = metadata.filter(metaObj => metaObj.id == sample);  
+    var metadata1 = data.metadata1;
+    var gaugeArray = metadata1.filter(metaObj => metaObj.id == sample);  
 
   // 2. Create a variable that holds the first sample in the metadata array.
-      var result = resultArray[0];
+      var result = gaugeArray[0];
 
   // 3. Create a variable that holds the washing frequency.  
     var wfreqs = result.wfreq;
