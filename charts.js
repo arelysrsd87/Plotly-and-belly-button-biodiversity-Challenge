@@ -63,7 +63,6 @@ function buildCharts(sample) {
     var resultArray = samples.filter(sampleObj => sampleObj.id == sample);
     //  5. Create a variable that holds the first sample in the array.
     var result = resultArray[0]; 
-    var metadata = metadataArray[0];
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otu_ids = result.otu_ids;
     var otu_labels = result.otu_labels;
@@ -116,8 +115,6 @@ function buildCharts(sample) {
 
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
-  });
-}
 
   // 1. Create a variable that filters the metadata array for the object with the desired sample number.
     var metadata1 = data.metadata1;
@@ -156,7 +153,10 @@ function buildCharts(sample) {
       automargin: true
     };
 
+ 
     // 6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge", gaugeData, gaugeLayout);
+  });
+}
 
 

@@ -22,47 +22,46 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-            <h3>From Bacteria to Beef </h3>
-          </div>
-          <div class="col-md-8">
-            <form class="bg-dark">
-            <p>
-              Many bacterial species are not well studfied and many more remain unknown to science. The goal of this study is to discover and document these bacteria. In particular, bacterial species that have the ability to synthesize proteins that taste like beef. Labs across the country have had success in synthesizing meat from algae, fungi, and microorganisms found on plant roots. However, we are still searching for the elusive bacteria that will provide the perfect taste. We hypothesized there is a microorganism that can supply the next best taste and it can be found from bacteria found on the human body. The human body is a source of thousands of types of bacteria, and different types of the body harbor different species. Furthermore, between individuals the bacterial species may vary even in the same location. Our hypotheis is the ideal bacterial species to make synthetic beef, may be found in the belly button, or at least in someone's belly button. To test the hypothesis, we have sampled the navels of people across the country to identify bacterial species that colonize our belly buttons. The dashboard below will allow participants to select their ID numbers to see which bacterial species live in their navels. Additionally, the volunteers should be able to identify the top 10 bacterial species in their belly buttons. That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, the volunteers will be able to identify whether that species is found in their navel.
-            </p>
-          </form>
-          </div>
+          <h3>From Bacteria to Beef </h3>
         </div>
+        <div class="col-md-8">
+          <p>
+            Many bacterial species are not well studfied and many more remain unknown to science. The goal of this study is to discover and document these bacteria. In particular, bacterial species that have the ability to synthesize proteins that taste like beef. Labs across the country have had success in synthesizing meat from algae, fungi, and microorganisms found on plant roots. However, we are still searching for the elusive bacteria that will provide the perfect taste. We hypothesized there is a microorganism that can supply the next best taste and it can be found from bacteria found on the human body. The human body is a source of thousands of types of bacteria, and different types of the body harbor different species. Furthermore, between individuals the bacterial species may vary even in the same location. Our hypotheis is the ideal bacterial species to make synthetic beef, may be found in the belly button, or at least in someone's belly button. To test the hypothesis, we have sampled the navels of people across the country to identify bacterial species that colonize our belly buttons. The dashboard below will allow participants to select their ID numbers to see which bacterial species live in their navels. Additionally, the volunteers should be able to identify the top 10 bacterial species in their belly buttons. That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, the volunteers will be able to identify whether that species is found in their navel.
+          </p>
+        </div>
+      </div>
     </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-2">
-        <form class="bg-dark">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
+
+    <div class="container"> </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
-      </form>
       </div>
+      
       <div class="col-md-5">
         <form class="bg-dark">
         <div id="bar"></div>
         <p>This horizontal bar chart displays the top 10 bacterial species (OTUs) when an individual's ID is selected from the dropdown menu.</p>
         </form>
       </div>
+      
       <div class="col-md-5">
         <form class="bg-dark">
         <div id="gauge"></div>
         </form>
       </div>
     </div>
+    
     <div class="row">
       <div class="col-md-12">
         <form class="bg-dark">
