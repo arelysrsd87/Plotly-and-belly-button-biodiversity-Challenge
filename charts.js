@@ -117,8 +117,8 @@ function buildCharts(sample) {
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
 
   // 1. Create a variable that filters the metadata array for the object with the desired sample number.
-    var metadata1 = data.metadata1;
-    var gaugeArray = metadata1.filter(metaObj => metaObj.id == sample);  
+    var metadata = data.metadata;
+    var gaugeArray = metadata.filter(metaObj => metaObj.id == sample);  
 
   // 2. Create a variable that holds the first sample in the metadata array.
       var result = gaugeArray[0];
