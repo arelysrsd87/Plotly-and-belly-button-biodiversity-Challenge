@@ -9,18 +9,16 @@ function buildCharts(sample) {
     // Create a variable that filters the samples for the object with the desired sample number.
 
     // 1. Create a variable that filters the metadata array for the object with the desired sample number.
-
+    var metadata = data.metadata;
     // Create a variable that holds the first sample in the array.
-  
-
+    var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
     // 2. Create a variable that holds the first sample in the metadata array.
-    
-
+    var result = resultArray[0];
     // Create variables that hold the otu_ids, otu_labels, and sample_values.
 
 
     // 3. Create a variable that holds the washing frequency.
-   
+    
     // Create the yticks for the bar chart.
 
     // Use Plotly to plot the bar data and layout.
@@ -37,10 +35,15 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-     
+     type: "indicator",
+     mode: "gauge+number",
+     title: "Belly Button Washing Frequency",
+     maximum range: 10,
+     bar color: "black",
+
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
-    Plotly.newPlot();
+    Plotly.newPlot("gauge", gaugeData, gaugeLayout);
   });
 }
